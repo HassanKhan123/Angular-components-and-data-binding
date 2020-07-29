@@ -25,4 +25,8 @@ export class AppComponent {
       content: serverData.serverContent,
     });
   }
+
+  onDestroy() {
+    this.serverElements.splice(0, 1);
+  }
 }
